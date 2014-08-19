@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#body {
+	margin: 0;
+	padding: 0;
+}
+
+#home {
+	background-color: yellow;
+}
+
+#features {
+	background-color: yellow;
+}
+
+#gallery {
+	background-color: yellow;
+	clear: both;
+}
+
+#movie {
+	background-color: yellow;
+}
+
+#about {
+	background-color: yellow;
+}
+
+#contact {
+	background-color: yellow;
+}
+
+.wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.column-features {
+	background-color: red;
+	width: 33%;
+	float: left;
+}

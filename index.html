@@ -3,22 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <title>Umbrella</title>
+<link href="styles/styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 	<section id="home">
-		<header>
-			<h1>Umbrella.</h1><!--the logo will go here later-->
-				<nav>
-					<ul>
-						<li><a href="#home">Home</a></li>
-						<li><a href="#features">Features</a></li>
-						<li><a href="#gallery">Gallery</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav>
-		</header>
+		<div class="wrapper">
+        	<header>
+				<h1>Umbrella.</h1><!--the logo will go here later-->
+					<nav>
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#features">Features</a></li>
+							<li><a href="#gallery">Gallery</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+			</header>
         <div><!--maybe I will use a diff. element for semantics later-->
         	<h2>Introducting Umbrella.</h2>
             <p>Made to modify and use anywhere</p>
@@ -27,143 +29,164 @@
                 <li>Iste matus error sit voluptatem accusantium</li>
                 <li>doloremque laudantium</li>
             </ul>
-                    
+                 <img src="images/hand-iphone.png">   
             <!--placeholders buttons for now-->
             <a href="">download</a>
             <a href="">view gallery</a>
          </div>
          
          <!--I will have to address the image of the device later, it will go here in the source order-->
-         
+       </div>  
 	</section>
     
     <section id="features">
-    	<h2>&mdash;AMAZING FEATURES&mdash;</h2>
-        	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
-            </p>
+    	<div class="wrapper">
+    		<h2>&mdash;AMAZING FEATURES&mdash;</h2>
+        		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.
+            	</p>
             <!--I will change these div's later-->
-            <div>
-            	<img src="images/hand-iphone.png">
-            	<p>Accusan timar</p>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                </p>
-            </div>
-            <div>
-            	<img src="">
-            	<p>Accusan timar</p>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                </p>
-            </div>
-            <div>
-            	<img src="">
-            	<p>Accusan timar</p>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                </p>
-            </div>
-		<img src=""> <!--I will put the image in later-->
-        	<div>
-            	<img src="">
-            	<p>Accusan timar</p>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                </p>
-            </div>
-            <div>
-            	<img src="">
-            	<p>Accusan timar</p>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                </p>
-            </div>
-            <div>
-            	<img src="">
-            	<p>Accusan timar</p>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                </p>
+                <div class="column-features">
+                    <div class="feature-details">
+                        
+                        <p>Accusan timar</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                        </p>
+                    </div>
+                
+                    <div class="feature-details">
+                        <img src="">
+                        <p>Accusan timar</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                        </p>
+                    </div>
+                    <div class="feature-details">
+                        <img src="">
+                        <p>Accusan timar</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                        </p>
+                    </div>
+                 </div>
+              <div class="column-features">
+              	<div class="feature-details">
+				<img src="images/yellow-screen-iphone.png"> <!--I will put the image in later-->
+            	</div>
+              </div>
+        	<div class="column-features">
+                    <div class="feature-details">
+                        <img src="">
+                        <p>Accusan timar</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                        </p>
+                    </div>
+                    <div class="feature-details">
+                        <img src="">
+                        <p>Accusan timar</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                        </p>
+                    </div>
+                    <div class="feature-details">
+                        <img src="">
+                        <p>Accusan timar</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                        </p>
+                    </div>
+                 </div>
             </div>
     </section>
     
     <section id="gallery">
-    	<h2>&mdash;SCREENSHOTS GALLERY&mdash;</h2>
-        	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.
-            </p>
-            <div>
-            <img src=""><!--will be transparent-->
-            <img src="">
-            <img src="">
-            <img src="">
-            <img src=""><!--will be transparent-->
+    	<div class="wrapper">
+    		<h2>&mdash;SCREENSHOTS GALLERY&mdash;</h2>
+        		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta.
+            	</p>
+            	<div>
+            	<img src=""><!--will be transparent-->
+            	<img src="">
+            	<img src="">
+            	<img src="">
+            	<img src=""><!--will be transparent-->
+            	</div>
             </div>
     </section>
     
     <section id="movie">
-    	<img src=""><!--video image will be here-->
+    	<div class="wrapper">
+    		<img src=""><!--video image will be here-->
+        </div>
     </section>
     
     <section id="about">
-    	<h2>&mdash;PEOPLE BEHIND THE APP&mdash;</h2>
-        	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-            </p>
-            <div><!--may change this later; images and words?-->
-            	<img src="">
-                <img src="">
-                <img src="">
-                <img src="">
+    	<div class="wrapper">
+        	<h2>&mdash;PEOPLE BEHIND THE APP&mdash;</h2>
+        		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+            	</p>
+            	<div><!--may change this later; images and words?-->
+            		<img src="">
+                	<img src="">
+                	<img src="">
+                	<img src="">
+            	</div>
+            	<div><!--may change this?-->
+            		<p>&ldquo;</p>
+                	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                	</p>
+                	<img src=""><!--I don't know if this will be a paragraph or a picture?-->
+            	</div>
+            	<div>
+            		<h2>&mdash;FEATURED IN&mdash;</h2>
+                		<div><!--may change later-->
+                    		<img src="">
+                        	<img src="">
+                        	<img src="">
+                        	<img src="">
+                        	<img src="">
+                    	</div>
+             	</div>
             </div>
-            <div><!--may change this?-->
-            	<p>&ldquo;</p>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                </p>
-                <img src=""><!--I don't know if this will be a paragraph or a picture?-->
-            </div>
-            <div>
-            	<h2>&mdash;FEATURED IN&mdash;</h2>
-                	<div><!--may change later-->
-                    	<img src="">
-                        <img src="">
-                        <img src="">
-                        <img src="">
-                        <img src="">
-                    </div>
-             </div>
     </section>
     
     <section id="contact">
-    	<h2>&mdash;GET IN TOUCH&mdash;</h2>
-        	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-            </p>
-            <div><!--This is where my form will go, not sure how to make one yet!-->
+    <div class="wrapper">
+    		<h2>&mdash;GET IN TOUCH&mdash;</h2>
+        		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+            	</p>
+            	<div><!--This is where my form will go, not sure how to make one yet!-->
+            	</div>
+            	<img src="">
             </div>
-            <img src="">
     </section>
     
     <footer>
-    	<div><!--I don't know if this is correct?-->
-        	<img src=""><!--this will be the logo-->
-            <p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-        </div>
-        <div>
-        	<h2>Subscribe</h2>
+    	<div class="wrapper">
+    		<div><!--I don't know if this is correct?-->
+        		<img src=""><!--this will be the logo-->
+            	<p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            	</p>
+        	</div>
+        	<div>
+        		<h2>Subscribe</h2>
             <!--form element will go here-->
-            <p>enusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-        </div>
-        <div>
-        	<h2>Explore</h2>
-            <p><a href="">Envato</a>
-            <a href="">Themecurve</a>
-            <a href="">Kreativeshowcase</a>
-            <a href="">Freebiescurve</a>
-            <a href="">Themeforest</a>
-            <a href="">Microsoft</a>
-            <a href="">Google</a>
-            <a href="">Yahoo</a>
-            </p>
-        </div>
-        <div>
-        	<p>Created with <!--icon of heart-->by themecurve, exclusive for kreativeshowcase
-            </p>
-            <p><small>&copy; 2014 Umbrella. All Rights Reserved.
-            </small></p>
+            	<p>enusmod tempor incididunt ut labore et dolore magna aliqua.
+            	</p>
+        	</div>
+        	<div>
+        		<h2>Explore</h2>
+            	<p><a href="">Envato</a>
+            	<a href="">Themecurve</a>
+            	<a href="">Kreativeshowcase</a>
+            	<a href="">Freebiescurve</a>
+            	<a href="">Themeforest</a>
+            	<a href="">Microsoft</a>
+            	<a href="">Google</a>
+            	<a href="">Yahoo</a>
+            	</p>
+        	</div>
+        	<div>
+        		<p>Created with <!--icon of heart-->by themecurve, exclusive for kreativeshowcase
+            	</p>
+            	<p><small>&copy; 2014 Umbrella. All Rights Reserved.
+            	</small></p>
+            </div>
     </footer>
                     
 </body>
