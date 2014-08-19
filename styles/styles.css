@@ -15,8 +15,9 @@
 }
 
 #gallery {
-	background-color: yellow;
+	background-color: gray;
 	clear: both;
+	overflow: auto;
 }
 
 #movie {
@@ -40,4 +41,13 @@
 	background-color: red;
 	width: 33%;
 	float: left;
+}
+
+.column-gallery {
+	width: 20%;
+	float: left;
+}
+
+.column-gallery img {
+	width 100%
 }
