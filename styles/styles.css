@@ -1,9 +1,15 @@
 @charset "UTF-8";
 /* CSS Document */
 
-#body {
+#body, h1, h2, nav, header, ul, li {
 	margin: 0;
 	padding: 0;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 #home {
@@ -37,17 +43,17 @@
 	margin: 0 auto;
 }
 
-.column-features {
-	background-color: red;
+.column-features, .column-gallery {
 	width: 33%;
 	float: left;
+	padding-right: 30px;
 }
 
 .column-gallery {
 	width: 20%;
-	float: left;
+	padding: 0 25px;
 }
 
-.column-gallery img {
-	width 100%
+.column-gallery img, .column-features img {
+	width: 100%;
 }
