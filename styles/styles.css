@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+
 #body, h1, h2, nav, header, ul, li {
 	margin: 0;
 	padding: 0;
@@ -10,18 +12,21 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #home {
 	background-color: yellow;
+	overflow: auto;
 }
 
 #features {
 	background-color: yellow;
+	clear: both;
 }
 
 #gallery {
-	background-color: gray;
+	background-color: yellow;
 	clear: both;
 	overflow: auto;
 }
@@ -57,3 +62,12 @@
 .column-gallery img, .column-features img {
 	width: 100%;
 }
+
+.welcome-image {
+	float: right;
+}
+
+#movie img {
+	width: 100%;
+}
+
