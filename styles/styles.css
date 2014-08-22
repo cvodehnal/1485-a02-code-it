@@ -15,6 +15,17 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
+header {
+	overflow: auto;
+	background: white;
+	position: fixed;
+	top: 30px;
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	z-index: 1;
+}
+
 #home {
 	background-color: yellow;
 	overflow: auto;
@@ -71,3 +82,17 @@
 	width: 100%;
 }
 
+.logo {
+	float: left;
+}
+
+.intro {
+	float: left;
+	width: 45%;
+	margin-top: 350px;
+}
+
+#home .wrapper {
+	position: relative;
+	min-height: 780 px;
+}
