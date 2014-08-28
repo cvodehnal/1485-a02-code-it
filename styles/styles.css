@@ -89,10 +89,6 @@ header {
 	width: 100%;
 }
 
-.logo {
-	float: left;
-}
-
 .intro {
 	float: left;
 	width: 45%;
@@ -101,7 +97,7 @@ header {
 
 #home .wrapper {
 	position: relative;
-	min-height: 780 px;
+	min-height: 780px;
 }
 
 nav {
@@ -121,6 +117,7 @@ nav li {
 	position: absolute;
 	right: 0;
 	z-index: 0;
+	bottom: 0;
 }
 
 #features h2 {
@@ -157,13 +154,17 @@ nav li {
 /* Typography */
 
 .logos {
-	margin: 88px
+	margin: 88px;
 }
 
 .logo {
 	margin: 40px;
+	float: left;
 }
 
 .buttons {
 	border: medium;
-	border-style:solid
+	border-style: solid;
+	padding: 23px;
+	clear: both;
+}
