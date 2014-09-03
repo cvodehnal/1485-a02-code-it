@@ -162,9 +162,23 @@ nav li {
 	float: left;
 }
 
-.buttons {
-	border: medium;
-	border-style: solid;
-	padding: 23px;
+a.buttons {
+	border: 3px solid #000;
+	text-decoration: none;
+	padding: 15px 30px;
 	clear: both;
+	font-size: 22px;
+	color: #000;
+}
+
+a.buttons:hover{
+	opacity: .5;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.buttons {
+	margin-top: 70px;
 }
