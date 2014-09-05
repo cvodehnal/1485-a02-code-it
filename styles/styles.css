@@ -38,17 +38,17 @@ header {
 }
 
 #features {
-	background-color: yellow;
+	background-color: white;
 }
 
 #gallery {
-	background-color: yellow;
+	background-color: #FAFAFA;
 	clear: both;
 	overflow: auto;
 }
 
-#movie {
-	background-color: yellow;
+#movie img{
+	width: 100%;
 }
 
 #about {
@@ -256,4 +256,9 @@ button:hover {
     color: #ccc;
     text-transform: uppercase;
     background:transparent;
+}
+
+.translucent {
+	opacity: 0.2;
+filter: alpha(opacity = 20);
 }
