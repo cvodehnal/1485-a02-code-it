@@ -3,33 +3,92 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
 
-#body, h1, h2, h3, nav, header, ul, li, p {
+/*layout*/
+.wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+/*typography*/
+body, h1, h2, h3, nav, header, ul, li, p {
 	margin: 0;
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
 }
 
-h3 {
-	margin: 0;
+h1, h2, h3 {
+	font-family: 'Open Sans', sans-serif; font-weight: 700;
 }
 
+a {
+	text-decoration: none;
+}
+
+h2 {
+	text-align: center;
+	padding-top: 30px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.feature-description {
+	line-height: 25px;
+	font-size: 14px;
+	text-align: center;
+	padding: 90px;
+}
+
+/*accessibilty*/
 *, *:before, *:after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
+/*header*/
 header {
 	overflow: auto;
 	background: white;
 	position: fixed;
-	top: 30px;
+	top: 37px;
 	width: 100%;
 	max-width: 1170px;
 	margin: 0 auto;
 	z-index: 1;
 }
 
+.logo {
+	padding: 40px;
+	float: left;
+}
+
+/*nav*/
+nav {
+	float: right;
+}
+
+nav ul {
+	list-style-type: none;
+	text-transform: uppercase;
+	float: right;
+	margin-top: 18px;
+}
+
+nav li {
+	float: left;
+	margin: 18px;
+	display: inline;
+}
+
+nav a {
+	color: gray;
+	font-weight: 700;
+}
+
+/*home*/
 #home {
 	background: #f8e514 url("../images/home-screen.png") no-repeat center;
 	overflow: auto;
@@ -37,32 +96,46 @@ header {
 	min-height: 780px;
 }
 
+#home h1 {
+	font-weight: 500;
+}
+
+#home .wrapper {
+	position: relative;
+	min-height: 780px;
+}
+
+.home-image {
+	position: absolute;
+	right: 0;
+	z-index: 0;
+	bottom: 0;
+}
+
+#home li {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+#home ul {
+	padding: 20px;
+}
+
+.intro {
+	float: left;
+	width: 45%;
+	margin-top: 350px;
+}
+
+.intro li {
+	font-size: 14px;
+	font-weight: 600;
+}
+
+/*features*/
 #features {
 	background-color: white;
-}
-
-#gallery {
-	background-color: #FAFAFA;
-	clear: both;
-	overflow: auto;
-}
-
-#movie img{
-	width: 100%;
-}
-
-#about {
-	background-color: yellow;
-}
-
-#contact {
-	background-color: yellow;
-}
-
-.wrapper {
-	max-width: 1170px;
-	margin: 0 auto;
-	overflow: auto;
+	padding-top: 116px;
 }
 
 .column-features, .column-gallery {
@@ -80,53 +153,6 @@ header {
 	width: 100%;
 }
 
-.welcome-image {
-	float: right;
-}
-
-#movie img {
-	width: 100%;
-}
-
-.intro {
-	float: left;
-	width: 45%;
-	margin-top: 350px;
-}
-
-#home .wrapper {
-	position: relative;
-	min-height: 780px;
-}
-
-nav {
-	float: right;
-}
-
-nav ul {
-	list-style-type: none;
-}
-
-nav li {
-	float: left;
-	margin: 42px;
-}
-
-.home-image {
-	position: absolute;
-	right: 0;
-	z-index: 0;
-	bottom: 0;
-}
-
-#features h2 {
-	text-align: center;
-}
-
-#gallery h2 {
-	text-align: center;
-}
-
 .feature-details {
 	padding: 20px;
 	overflow: auto;
@@ -135,6 +161,8 @@ nav li {
 
 .feature-details:hover {
 	background: #fbfbe9;
+	width: 100%;
+	display: block;
 }
 
 .feature-details span {
@@ -150,36 +178,106 @@ nav li {
 	float: left;
 }
 
-/* Typography */
+#features h2 {
+	text-align: center;
+}
+
+/*screenshots gallery*/
+#gallery {
+	background-color: #FAFAFA;
+	clear: both;
+	overflow: auto;
+	padding-top: 116px;
+	padding-bottom: 153px;
+}
+
+#gallery h2 {
+	text-align: center;
+}
+
+.translucent {
+	opacity: 0.2;
+	filter: alpha(opacity = 20);
+}
+
+/*show reel*/
+#movie img {
+	width: 100%;
+}
+
+/*about*/
+#about {
+	background-color: #FAFAFA;
+	overflow: auto;
+	padding-top: 110px;
+	padding-bottom: 150px;
+}
+
+.about-people {
+	width: 25%;
+	float: left;
+	padding-right: 30px;
+}
+
+/*blockquote*/
+#blockquote {
+	clear: both;
+	padding-bottom: 258px;
+}
+
+.quotemark p {
+	padding-top: 116px;
+	padding-bottom: 62px;
+	text-align: center;
+	font-size: 140px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	opacity: .2;
+}
+
+#blockquote img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#blockquote p {
+	text-align: center;
+	line-height: 25px;
+}
+
+#blockquote h4 {
+	text-align: center;
+}
+
+/*featured in*/
+#featured-in {
+	padding-top: 116px;
+	clear: both;
+	background-color: #f8e514;
+	overflow: auto;
+}
 
 .logos {
+	text-align: center;
 	margin: 88px;
 }
 
-.logo {
-	margin: 40px;
+/*contact*/
+#contact {
+	background-color: white;
+	padding-top: 116px;
+	border-bottom: solid 2px;
+	border-bottom-color: yellow;
+}
+
+.contact-info {
 	float: left;
+	width: 45%;
+	margin-top: 116px;
 }
 
-a.buttons {
-	border: 3px solid #000;
-	text-decoration: none;
-	padding: 15px 30px;
-	clear: both;
-	font-size: 22px;
-	color: #000;
-}
-
-a.buttons:hover{
-	opacity: .5;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
-}
-
-.buttons {
-	margin-top: 70px;
+#contact img {
+	float: right;
 }
 
 input {
@@ -209,6 +307,27 @@ button:hover {
   transition: all .2s ease-in-out;
 }
 
+/* Typography */
+a.buttons {
+	border: 3px solid #000;
+	text-decoration: none;
+	padding: 15px 30px;
+	clear: both;
+	font-size: 22px;
+	color: #000;
+}
+
+a.buttons:hover{
+	opacity: .5;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.buttons {
+	margin-top: 70px;
+}
 
 /*Clearing Floats*/
 .clear:before, .clear:after{
@@ -222,12 +341,13 @@ button:hover {
 
 .clear{
     zoom:1;
-}    
+}
+   
 /* Form wrapper styling */
 .form-wrapper {
     width: 100%;
-    border-radius: 4px 0 0 4px;
-    border:4px solid #000;
+    border-radius: 3px 0 0 3px;
+    border:2px solid #ccc;
 }
 
 /* Form text input */
@@ -241,11 +361,8 @@ button:hover {
     outline: 0;
 }
 
- 
-
-/* Form submit button */
+ /* Form submit button */
 .form-wrapper button {
-    font-size:25px;
     width:15%;
     overflow: visible;
     position: relative;
@@ -258,7 +375,25 @@ button:hover {
     background:transparent;
 }
 
-.translucent {
-	opacity: 0.2;
-filter: alpha(opacity = 20);
+/*footer*/
+footer {
+	padding-top: 130px;
+	clear: both;
+}
+
+.column-footer {
+	width: 25%;
+	float: left;
+	padding-right: 30px;
+	font-size: 10px;
+}
+
+.explore li {
+	float: left;
+	width: 50%;
+}
+
+.footer-description {
+	clear: both;
+	font-size 10px;
 }
