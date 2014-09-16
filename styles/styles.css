@@ -92,7 +92,6 @@ nav a {
 #home {
 	background: #f8e514 url("../images/home-screen.png") no-repeat center;
 	overflow: auto;
-	background-height: 100%;
 	min-height: 780px;
 }
 
@@ -197,7 +196,6 @@ nav a {
 
 .translucent {
 	opacity: 0.2;
-	filter: alpha(opacity = 20);
 }
 
 /*show reel*/
@@ -243,7 +241,6 @@ nav a {
 
 #blockquote p {
 	text-align: center;
-	line-height: 25px;
 }
 
 #blockquote h4 {
@@ -344,10 +341,6 @@ a.buttons:hover{
 .clear:after{
     clear:both;
 }
-
-.clear{
-    zoom:1;
-}
    
 /* Form wrapper styling */
 .form-wrapper {
@@ -401,5 +394,5 @@ footer {
 
 .footer-description {
 	clear: both;
-	font-size 10px;
+	font-size: 10px;
 }
